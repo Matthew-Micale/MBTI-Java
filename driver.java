@@ -201,15 +201,6 @@ for(String x : t2 ){
 	Scanner scan = new Scanner(System.in);
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	for(int i = 0; i < numOfQs;)
 	{
 		
@@ -298,7 +289,101 @@ for(String x : t2 ){
 	case "INTJH":
 		calculateFinal = INTJH;
 		break;
-	
+	case "INTJL":
+		calculateFinal = INTJL;
+		break;
+	case "INTPH":
+		calculateFinal = INTPH;
+		break;
+	case "INTPL":
+		calculateFinal = INTPL;
+		break;
+	case "INFJH":
+		calculateFinal = INFJH;
+		break;
+	case "INFJL":
+		calculateFinal = INFJL;
+		break;
+	case "INFPH":
+		calculateFinal = INFPH;
+		break;
+	case "INFPL":
+		calculateFinal = INFPL;
+		break;
+	case "ISTJH":
+		calculateFinal = ISTJH;
+		break;
+	case "ISTJL":
+		calculateFinal = ISTJL;
+		break;
+	case "ISTPH":
+		calculateFinal = ISTPH;
+		break;
+	case "ISTPL":
+		calculateFinal = ISTPL;
+		break;
+	case "ISFJH":
+		calculateFinal = ISFJH;
+		break;
+	case "ISFJL":
+		calculateFinal = ISFJL;
+		break;
+	case "ISFPH":
+		calculateFinal = ISFPH;
+		break;
+	case "ISFPL":
+		calculateFinal = ISFPL;
+		break;
+	case "ENTJH":
+		calculateFinal = ENTJH;
+		break;
+	case "ENTJL":
+		calculateFinal = ENTJL;
+		break;
+	case "ENTPH":
+		calculateFinal = ENTPH;
+		break;
+	case "ENTPL":
+		calculateFinal = ENTPL;
+		break;
+	case "ENFJH":
+		calculateFinal = ENFJH;
+		break;
+	case "ENFJL":
+		calculateFinal = ENFJL;
+		break;
+	case "ENFPH":
+		calculateFinal = ENFPH;
+		break;
+	case "ENFPL":
+		calculateFinal = ENFPL;
+		break;
+	case "ESTJH":
+		calculateFinal = ESTJH;
+		break;
+	case "ESTJL":
+		calculateFinal = ESTJL;
+		break;
+	case "ESTPH":
+		calculateFinal = ESTPH;
+		break;
+	case "ESTPL":
+		calculateFinal = ESTPL;
+		break;
+	case "ESFJH":
+		calculateFinal = ESFJH;
+		break;
+	case "ESFJL":
+		calculateFinal = ESFJL;
+		break;
+	case "ESFPH":
+		calculateFinal = ESFPH;
+		break;
+	case "ESFPL":
+		calculateFinal = ESFPL;
+		break;
+	default:
+		calculateFinal = null;
 	
 	}
 	
