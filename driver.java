@@ -12,7 +12,6 @@ public class driver
 public static void main(String[] args) throws IOException 
 {
 // Instantiating all classes
-	// test comments
 	
 	Trait I = new Trait("Introversion",1);
 	Trait E = new Trait("Extraversion",2);
@@ -194,7 +193,18 @@ for(String x : t2 ){
 	
 	int numOfCs = 10;
 	Career[] allCs = new Career[numOfCs];
-	allCs[0] = new Career("Engineer",INTJH,INTJL); // add letter acronym for personality type for career
+	allCs[0] = new Career("Engineer",INTJH,INTJL);
+	allCs[1] = new Career("Dentist",ISTJL,INTJL);
+	allCs[2] = new Career("Counsler",INFJL,INFJH);
+	allCs[3] = new Career("HR Director",ENFJL,ENFPL);
+	allCs[4] = new Career("Construction Worker",ISTPL,ISTPH);
+	allCs[5] = new Career("Psychologist",ESFJL,ESFJH);
+	allCs[6] = new Career("Artist",INFPH,ISFPH);
+	allCs[7] = new Career("Event Planner",ESFPL,ESFPH);
+	allCs[8] = new Career("Reporter",ENFPL,ESFPL);
+	allCs[9] = new Career("Firefighter",ESTPL,ESTJL);
+	
+	// add letter acronym for personality type for career
 	
 	PersonalityType calculate = new PersonalityType();
 	
@@ -386,7 +396,14 @@ for(String x : t2 ){
 		calculateFinal = null;
 	
 	}
-	
-}
 
+System.out.println("Career Recommendations:");
+for(int i = 0; i < numOfCs; i++)
+{
+	if(allCs[i].checkMatch(calculateFinal))
+		System.out.println(allCs[i].getJobTitle());
+}
+}
+	
+	
 }

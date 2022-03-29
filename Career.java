@@ -19,4 +19,9 @@ public class Career
 	  else
 		  return false;
   }
+  
+  public String getJobTitle()
+  {
+	  return jobTitle;
+  }
   }
