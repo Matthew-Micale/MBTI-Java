@@ -11,7 +11,7 @@ public class driver
 
 public static void main(String[] args) throws IOException 
 {
-// Instantiating all classes
+// Instantiating all classes hey whatups
 	
 	Trait I = new Trait("Introversion",1);
 	Trait E = new Trait("Extraversion",2);
