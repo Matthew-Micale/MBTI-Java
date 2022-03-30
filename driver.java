@@ -11,7 +11,7 @@ public class driver
 
 public static void main(String[] args) throws IOException 
 {
-// Instantiating all classes hey whatups
+// Instantiating all classes
 	
 	Trait I = new Trait("Introversion",1);
 	Trait E = new Trait("Extraversion",2);
@@ -167,8 +167,9 @@ for(String x : t2 ){
 		
 		
 		
-		
-		int numOfQs = questions.size() ;
+	
+		int numOfQs = questions.size()-1 ;
+		System.out.println( tobj2.get(2) );
 		Question[] allQs = new Question[numOfQs];
 		for (int i =0; i<numOfQs; i++) {
 			allQs[i] = new Question(questions.get(i),weight.get(i),tobj1.get(i),tobj2.get(i));
@@ -176,7 +177,7 @@ for(String x : t2 ){
 			
 		
 
-	// add all personality types here
+	// add alla personality types here
 	
   /*
 	Question[] allQs = new Question[numOfQs];
