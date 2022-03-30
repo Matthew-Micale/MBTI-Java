@@ -9,7 +9,7 @@ public class Career
 	  jobTitle = jt;
 	  pt1 = p1;
 	  pt2 = p2;
-	  
+	//a  
   }
   
   public boolean checkMatch(FinalPersonalityType temp)
