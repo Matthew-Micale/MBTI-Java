@@ -177,7 +177,7 @@ for(String x : t2 ){
 			
 		
 
-	// add all personality types here
+	// add alla personality types here
 	
   /*
 	Question[] allQs = new Question[numOfQs];
