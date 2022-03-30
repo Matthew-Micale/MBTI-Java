@@ -211,7 +211,7 @@ for(String x : t2 ){
 	
 	Scanner scan = new Scanner(System.in);
 	
-	
+	// hello 
 	for(int i = 0; i < numOfQs;)
 	{
 		
