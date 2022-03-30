@@ -61,7 +61,7 @@ public static void main(String[] args) throws IOException
 	
 	
 
-	File csvfile = new File("C:\\Users\\alber\\Documents\\Book1.csv");
+	File csvfile = new File("Book1.csv");
 	BufferedReader br = new BufferedReader( new FileReader(csvfile));
 	String line = "";
 	ArrayList<String> questions = new ArrayList<String>(0);
