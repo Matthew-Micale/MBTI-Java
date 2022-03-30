@@ -167,8 +167,9 @@ for(String x : t2 ){
 		
 		
 		
-		
-		int numOfQs = questions.size() ;
+	
+		int numOfQs = questions.size()-1 ;
+		System.out.println( tobj2.get(2) );
 		Question[] allQs = new Question[numOfQs];
 		for (int i =0; i<numOfQs; i++) {
 			allQs[i] = new Question(questions.get(i),weight.get(i),tobj1.get(i),tobj2.get(i));
