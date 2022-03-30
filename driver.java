@@ -59,6 +59,7 @@ public static void main(String[] args) throws IOException
 	FinalPersonalityType ESFPH = new FinalPersonalityType("ESFPH",E,S,F,P,HS);
 	FinalPersonalityType ESFPL = new FinalPersonalityType("ESFPL",E,S,F,P,LS);
 	
+	//random comment
 	
 
 	File csvfile = new File("C:\\Users\\alber\\Documents\\Book1.csv");
