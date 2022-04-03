@@ -1,15 +1,20 @@
+// A class that stores data for each Response
+
 public class Response
 {
   public PersonalityType type;
   public Question questionAnswered;
   public int scaledResponse;
   
+ // Response constructor 
+  
   public Response(Question q, int sr)
   {
 	  questionAnswered = q;
-	  scaledResponse = sr;
-	  
+	  scaledResponse = sr;	  
   }
+  
+ // Determines which Trait the Response points go towards 
   
   public Trait getDelta()
   {
@@ -26,11 +31,12 @@ public class Response
 		return questionAnswered.getTrait1();
 	}
   }
+ 
+ // Returns the weight of the Question answered 
   
   public int getWeight()
   {
 	  int w = questionAnswered.getQWeight();
-	  //formula for calculating total score towards personality type here
 	  return w;
   }
   }

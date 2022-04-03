@@ -1,3 +1,6 @@
+// FinalPersonalityType is based on one of two Traits from each sphere
+// There are a total of 32 FinalPersonalityTypes
+
 public class FinalPersonalityType
 {
   

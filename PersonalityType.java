@@ -1,3 +1,6 @@
+// Keeps a running tally of the scores linked to each Trait
+// The Trait with the highest score of each sphere is sent to FinalPersonalityType
+
 public class PersonalityType
 {
 double iScore = 0;
@@ -20,6 +23,8 @@ Trait sphere2;
 Trait sphere3;
 Trait sphere4;
 Trait sphere5;
+
+// Adds points to the correct Trait based on the Responses
 
 public void addResponse(int id, int weight)
 {
@@ -59,6 +64,8 @@ public void addResponse(int id, int weight)
 	}
 }
 	
+// Returns the score of each Trait based on its ID number
+
 	public double getScore(int tID)
 	{
 
