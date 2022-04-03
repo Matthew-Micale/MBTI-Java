@@ -10,8 +10,9 @@ public class driver
 {
 
 public static void main(String[] args) throws IOException 
+
 {
-// Instantiating all classes
+// Instantiating all Traits
 	
 	Trait I = new Trait("Introversion",1);
 	Trait E = new Trait("Extraversion",2);
@@ -23,7 +24,8 @@ public static void main(String[] args) throws IOException
 	Trait P = new Trait("Perceiving",8);
 	Trait HS = new Trait("Highly-Stressed",9);
 	Trait LS = new Trait("Low-Stressed",10);
-	
+
+// Instantiating all FinalPersonalityTypes
 	
 	FinalPersonalityType INTJH = new FinalPersonalityType("INTJH",I,N,T,J,HS);
 	FinalPersonalityType INTJL = new FinalPersonalityType("INTJL",I,N,T,J,LS);
@@ -60,7 +62,8 @@ public static void main(String[] args) throws IOException
 	FinalPersonalityType ESFPL = new FinalPersonalityType("ESFPL",E,S,F,P,LS);
 	
 	
-
+// Reading in questions from a .csv file
+	
 	File csvfile = new File("Book1.csv");
 	BufferedReader br = new BufferedReader( new FileReader(csvfile));
 	String line = "";
@@ -80,23 +83,19 @@ public static void main(String[] args) throws IOException
 			
 		}
 		
-		
 	}
 	catch(FileNotFoundException e) {
 		e.printStackTrace();
 		
 	}
-System.out.println("questions"+questions);
-System.out.println("weight"+weight);
-System.out.println("traits"+t1 + " " +t2+ "");
 
-
-
-
+	
+// Instantiating ArrayLists for the Traits corresponding to each question
+	
 ArrayList<Trait> tobj1 = new ArrayList<Trait>(0);
 ArrayList<Trait> tobj2 = new ArrayList<Trait>(0);
 
-
+// Switch statement for adding Traits
 
 for(String x : t1){
 		
@@ -124,10 +123,6 @@ for(String x : t1){
    case "HS" :
       tobj1.add(HS);
       break; 
-       
-   // You can have any number of case statements.
-   default : // Optional
-      // Statements
 	}
 }
 	
@@ -158,15 +153,11 @@ for(String x : t2 ){
    case "HS" :
       tobj2.add(HS);
       break; 
-       
-   // You can have any number of case statements.
-   default : // Optional
-      // Statements
 	}
 }	
 		
 		
-		
+// For loop that makes Question objects from ArrayLists
 	
 		int numOfQs = questions.size()-2 ;
 		System.out.println( tobj2.get(2) );
@@ -175,23 +166,12 @@ for(String x : t2 ){
 			allQs[i] = new Question(questions.get(i),weight.get(i),tobj1.get(i),tobj2.get(i));
 		}
 			
+// Initializing Response array, same number of objects as the number of questions
 		
-
-	// add alla personality types here
-	
-  /*
-	Question[] allQs = new Question[numOfQs];
-	allQs[0] = new Question("I prefer working alone rather than a larger group",10,E,I);
-	allQs[1] = new Question("I focus on details rather than the bigger picture",10,N,S);
-	allQs[2] = new Question("I usually make decisions with logic instead of emotion",10,F,T);
-	allQs[3] = new Question("When going on vacation, I like to make a schedule",10,P,J);
-	allQs[4] = new Question("I get stressed really easily",10,LS,HS);
-	//add all questions here
-	 * 
-	
-*/	
 	Response[] allRs = new Response[numOfQs];
-	
+
+// Instantiating all Careers with their respective personality types	
+
 	int numOfCs = 20;
 	Career[] allCs = new Career[numOfCs];
 	allCs[0] = new Career("Engineer",INTJH,INTJL);
@@ -215,12 +195,14 @@ for(String x : t2 ){
 	allCs[18] = new Career("Lawyer",INTPL,INTJL);
 	allCs[19] = new Career("Writer",INTPL,INTPH);
 	
-	// add letter acronym for personality type for career
+	
+// PersonalityType object calculate is used to keep a running score of each Trait
 	
 	PersonalityType calculate = new PersonalityType();
 	
 	Scanner scan = new Scanner(System.in);
 	
+// Loop that asks the user questions and saves their responses	
 	
 	for(int i = 0; i < numOfQs;)
 	{
@@ -240,6 +222,8 @@ for(String x : t2 ){
 			i++;
 		}
 	}
+	
+// Creating a String out of the determined traits to link the responses to a FinalPersonalityType	
 	
 	String calculate1 = "";
 	
@@ -303,6 +287,8 @@ for(String x : t2 ){
 		calculate1 += "L";
 	}
 		
+// Switch statement that takes the previous String and links it to a FinalPersonalityType	
+	
 	FinalPersonalityType calculateFinal;
 	
 	switch(calculate1)
@@ -408,6 +394,8 @@ for(String x : t2 ){
 	
 	}
 
+// Loop that outputs career recommendations based on personality type	
+	
 System.out.println("Career Recommendations:");
 for(int i = 0; i < numOfCs; i++)
 {
