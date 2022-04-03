@@ -61,7 +61,7 @@ public static void main(String[] args) throws IOException
 	
 	
 
-	File csvfile = new File("C:\\Users\\alber\\Documents\\Book1.csv");
+	File csvfile = new File("Book1.csv");
 	BufferedReader br = new BufferedReader( new FileReader(csvfile));
 	String line = "";
 	ArrayList<String> questions = new ArrayList<String>(0);
@@ -192,7 +192,7 @@ for(String x : t2 ){
 */	
 	Response[] allRs = new Response[numOfQs];
 	
-	int numOfCs = 10;
+	int numOfCs = 20;
 	Career[] allCs = new Career[numOfCs];
 	allCs[0] = new Career("Engineer",INTJH,INTJL);
 	allCs[1] = new Career("Dentist",ISTJL,INTJL);
@@ -204,6 +204,16 @@ for(String x : t2 ){
 	allCs[7] = new Career("Event Planner",ESFPL,ESFPH);
 	allCs[8] = new Career("Reporter",ENFPL,ESFPL);
 	allCs[9] = new Career("Firefighter",ESTPL,ESTJL);
+	allCs[10] = new Career("Accountant",ISTJH,ISTJL);
+	allCs[11] = new Career("Photographer",ISFJH,ISFJL);
+	allCs[12] = new Career("Financial Planner", ENTPL,INTPL);
+	allCs[13] = new Career("Veterinarian",ISFPL,ESFPL);
+	allCs[14] = new Career("Marketer",ESTPL,ESTPH);
+	allCs[15] = new Career("Teacher",ENFPL,ENFPH);
+	allCs[16] = new Career("Police Officer",ESTJL,ISTJL);
+	allCs[17] = new Career("Social Worker",ISFPL,ESFPL);
+	allCs[18] = new Career("Lawyer",INTPL,INTJL);
+	allCs[19] = new Career("Writer",INTPL,INTPH);
 	
 	// add letter acronym for personality type for career
 	
