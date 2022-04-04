@@ -11,6 +11,8 @@ public class FinalPersonalityType
   public Trait sphere4;
   public Trait sphere5;
   
+  // Constructor
+  
   public FinalPersonalityType(String n, Trait s1, Trait s2, Trait s3, Trait s4, Trait s5)
   {
 	  name = n;
