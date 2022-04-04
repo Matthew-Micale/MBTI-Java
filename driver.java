@@ -13,9 +13,9 @@ public static void main(String[] args) throws IOException
 
 {
 	//creates GUI files
-	GUI win = new GUI(640,480);
-	win.setupGUI();
-	win.setupButtonListeners();
+	//GUI win = new GUI(640,480);
+	//win.setupGUI();
+	//win.setupButtonListeners();
 	
 	
 	
