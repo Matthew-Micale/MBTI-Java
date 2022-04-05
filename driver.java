@@ -75,7 +75,7 @@ public class driver
 		ArrayList<Integer> weight = new ArrayList<Integer>(0);
 		ArrayList<String> t1 = new ArrayList<String>(0);
 		ArrayList<String> t2 = new ArrayList<String>(0);
-		br.close();
+		
 
 		try {
 
@@ -383,6 +383,11 @@ public class driver
 			if (allCs[i].checkMatch(calculateFinal))
 				System.out.println(allCs[i].getJobTitle());
 		}
+		
+// Closes buffer reader		
+		
+		br.close();	
 	}
+	
 
 }
