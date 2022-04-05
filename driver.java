@@ -75,6 +75,7 @@ public class driver
 		ArrayList<Integer> weight = new ArrayList<Integer>(0);
 		ArrayList<String> t1 = new ArrayList<String>(0);
 		ArrayList<String> t2 = new ArrayList<String>(0);
+		br.close();
 
 		try {
 
