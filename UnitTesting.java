@@ -28,6 +28,19 @@ public static void main(String[] args)
 	
 	assertEquals(test3.getText(),"testing 1,2,3");
 	
+	PersonalityType test4 = new PersonalityType();
+	
+	test4.addResponse(1, 10);
+	
+	assertEquals(test4.getScore(1),10.0,0);
+	
+	Response test5 = new Response(test3,5);
+	
+	assertEquals(test5.getWeight(),10,0);
+	
+	Career test6 = new Career("temp2",null,null);
+	
+	assertFalse(test6.checkMatch(test));
 	
 }
 	
