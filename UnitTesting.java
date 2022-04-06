@@ -42,6 +42,14 @@ public static void main(String[] args)
 	
 	assertFalse(test6.checkMatch(test));
 	
+	assertEquals(I.getId(),1);
+	
+	assertEquals(test3.getTrait1(),I);
+	
+	assertEquals(test3.getTrait2(),E);
+	
+	assertEquals(test3.getQWeight(),10);
+	
 }
 	
 }
