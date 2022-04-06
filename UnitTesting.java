@@ -24,6 +24,11 @@ public static void main(String[] args)
 	
 	assertTrue(test1.checkMatch(test));
 	
+	Question test3 = new Question("testing 1,2,3",10,I,E);
+	
+	assertEquals(test3.getText(),"testing 1,2,3");
+	
+	
 }
 	
 }
