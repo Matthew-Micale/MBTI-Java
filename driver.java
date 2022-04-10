@@ -160,7 +160,7 @@ public class driver
 
 // For loop that makes Question objects from ArrayLists
 
-		int numOfQs = questions.size() - 2;
+		int numOfQs = questions.size() - 5;
 		System.out.println(tobj2.get(2));
 		Question[] allQs = new Question[numOfQs];
 		for (int i = 0; i < numOfQs; i++) {
