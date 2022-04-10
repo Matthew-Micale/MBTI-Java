@@ -89,8 +89,8 @@ public class GUI implements ChangeListener {
 		ActionListener ActNex = new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent ae) {
-				lblQ.setText("Nex");
-				System.out.println("I pass through Nex");
+				//lblQ.setText("Nex");
+				//System.out.println("I pass through Nex");
 			}
 		};
 		// gives actions to button previous
