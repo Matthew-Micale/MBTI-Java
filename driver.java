@@ -173,7 +173,7 @@ public class driver
 
 // Instantiating all Careers with their respective personality types	
 
-		int numOfCs = 20;
+		int numOfCs = 30;
 		Career[] allCs = new Career[numOfCs];
 		allCs[0] = new Career("Engineer", INTJH, INTJL);
 		allCs[1] = new Career("Dentist", ISTJL, INTJL);
@@ -195,6 +195,17 @@ public class driver
 		allCs[17] = new Career("Social Worker", ISFPL, ESFPL);
 		allCs[18] = new Career("Lawyer", INTPL, INTJL);
 		allCs[19] = new Career("Writer", INTPL, INTPH);
+		allCs[20] = new Career("Musician",ENFPH,ENFPL);
+		allCs[21] = new Career("Tour Guide",ENFPH,ENFPL);
+		allCs[22] = new Career("Dental Hygenist",ISFPH,ISFPL);
+		allCs[23] = new Career("Pharmacist",ISTPL,ISTJL);
+		allCs[24] = new Career("Teacher",ENFJL,ENFJH);
+		allCs[25] = new Career("Pilot",ENTJL,INTJL);
+		allCs[26] = new Career("Secretary",ESFJL,ESFJH);
+		allCs[27] = new Career("EMT",ISTPL,ESTPL);
+		allCs[28] = new Career("Clergy",INFJL,INFJH);
+		allCs[29] = new Career("Civil Engineer",ESTPL,ISTPL);
+		
 
 // PersonalityType object calculate is used to keep a running score of each Trait
 
