@@ -8,8 +8,9 @@ import java.io.IOException;
 public class driver
 
 {
+	
 
-	public static void main(String[] args) throws IOException
+	public static void main(String[] args) throws IOException 
 
 	{
 		// creates GUI files
@@ -210,6 +211,10 @@ public class driver
 // PersonalityType object calculate is used to keep a running score of each Trait
 
 		PersonalityType calculate = new PersonalityType();
+		 GUI screen = new GUI(640,480);
+		 screen.setupGUI();
+		 screen.setupButtonListeners();
+		 
 
 		Scanner scan = new Scanner(System.in);
 
@@ -217,7 +222,7 @@ public class driver
 
 		for (int i = 0; i < numOfQs;) {
 
-			System.out.println(allQs[i].getText());
+			screen.printQuestions(allQs[i]);
 			System.out.println("Disagree completely: 1 2 Neutral: 3 4 Agree Comletely: 5");
 			int res = scan.nextInt();
 			if (res > 5 || res < 1) {

@@ -20,8 +20,6 @@ public class GUI implements ChangeListener {
 		p1 = new JPanel();
 		p2 = new JPanel();
 		slider = new JSlider(JSlider.HORIZONTAL, 1, 5, 1);
-		btnyes = new JButton("Yes");
-		btnno = new JButton("No");
 		btnNex = new JButton("Next Question");
 		btnPre = new JButton("Previous Question");
 		lblQ = new JLabel("Do you consider yourself a Think or a Feeler");
@@ -73,7 +71,7 @@ public class GUI implements ChangeListener {
 
 	public void setupButtonListeners() {
 		// gives actions to button yes
-		ActionListener ActYes = new ActionListener() {
+		/*ActionListener ActYes = new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent ae) {
 				lblQ.setText("Yes");
@@ -88,6 +86,7 @@ public class GUI implements ChangeListener {
 				System.out.println("I pass through No");
 			}
 		};
+		*/
 		// gives actions to button next
 		ActionListener ActNex = new ActionListener() {
 			@Override
@@ -107,11 +106,17 @@ public class GUI implements ChangeListener {
 
 		btnNex.addActionListener(ActNex);
 		btnPre.addActionListener(ActPre);
-		btnyes.addActionListener(ActYes);
-		btnno.addActionListener(ActNo);
+		//btnyes.addActionListener(ActYes);
+		//btnno.addActionListener(ActNo);
 	}
 
 	public void stateChanged(ChangeEvent e) {
 		lblQ.setText("Value is: " + slider.getValue());
 	}
-}
+	
+	public void printQuestions(Question temp)
+	{
+		 final JTextArea textArea = new JTextArea();
+		 textArea.setText(temp.getText());
+	}
+	}
