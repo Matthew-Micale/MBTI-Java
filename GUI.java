@@ -58,8 +58,6 @@ public class GUI implements ChangeListener {
 
 		p2.add(slider);
 		p2.add(lblfill);
-		p2.add(btnyes);
-		p2.add(btnno);
 
 		p2.add(btnNex);
 		p2.add(btnPre);
