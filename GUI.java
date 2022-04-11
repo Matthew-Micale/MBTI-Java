@@ -10,8 +10,9 @@ public class GUI implements ChangeListener {
 	private JFrame frame;
 	private JPanel p1, p2;
 	private JLabel lblQ, lblfill;
-	private JButton btnyes, btnno, btnNex, btnPre;
+	private JButton btnNex, btnPre;
 	private JSlider slider;
+	private driver answers;
 
 	// Constructor
 	public GUI(int w, int h) {
@@ -68,53 +69,35 @@ public class GUI implements ChangeListener {
 	}
 
 	public void setupButtonListeners() {
-		// gives actions to button yes
-		/*ActionListener ActYes = new ActionListener() {
-			@Override
-			public void actionPerformed(ActionEvent ae) {
-				lblQ.setText("Yes");
-				System.out.println("I pass through Yes");
-			}
-		};
-		// gives actions to button no
-		ActionListener ActNo = new ActionListener() {
-			@Override
-			public void actionPerformed(ActionEvent ae) {
-				lblQ.setText("No");
-				System.out.println("I pass through No");
-			}
-		};
-		*/
 		// gives actions to button next
 		ActionListener ActNex = new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent ae) {
-				//lblQ.setText("Nex");
-				//System.out.println("I pass through Nex");
+				// lblQ.setText("Nex");
+				System.out.println("false");
 			}
 		};
 		// gives actions to button previous
 		ActionListener ActPre = new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent ae) {
-				lblQ.setText("Pre");
 				System.out.println("I pass through Pre");
 			}
 		};
 
 		btnNex.addActionListener(ActNex);
 		btnPre.addActionListener(ActPre);
-		//btnyes.addActionListener(ActYes);
-		//btnno.addActionListener(ActNo);
 	}
 
 	public void stateChanged(ChangeEvent e) {
-		lblQ.setText("Value is: " + slider.getValue());
+		// lblQ.setText("Value is: " + slider.getValue());
+		answers = new driver(slider.getValue());
+		
 	}
-	
-	public void printQuestions(Question temp)
-	{
-		 final JTextArea textArea = new JTextArea();
-		 textArea.setText(temp.getText());
+
+	public void printQuestions(Question temp) {
+		// final JTextArea textArea = new JTextArea();
+		// textArea.setText(temp.getText());
+		lblQ.setText(temp.getText());
 	}
-	}
+}

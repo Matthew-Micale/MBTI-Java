@@ -5,15 +5,17 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
-import java.awt.*;
-import java.awt.event.*;
-import javax.swing.*;
-import javax.swing.event.*;
 
 public class driver
 
 {
 	
+	private int Answer;
+	
+	driver(int a){
+		Answer = a;
+		System.out.println("I have pass though: " + Answer);
+	}
 
 	public static void main(String[] args) throws IOException 
 
@@ -216,7 +218,7 @@ public class driver
 // PersonalityType object calculate is used to keep a running score of each Trait
 
 		PersonalityType calculate = new PersonalityType();
-		 GUI screen = new GUI(640,480);
+		 GUI screen = new GUI(1040,480);
 		 screen.setupGUI();
 		 screen.setupButtonListeners();
 		 
@@ -240,6 +242,7 @@ public class driver
 				calculate.addResponse(id, w1);
 				i++;
 			}
+			
 		}
 
 // Creating a String out of the determined traits to link the responses to a FinalPersonalityType	
