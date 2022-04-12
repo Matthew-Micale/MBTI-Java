@@ -178,6 +178,28 @@ public class driver
 		Response[] allRs = new Response[numOfQs];
 
 // Instantiating all Careers with their respective personality types	
+		
+		File csvfile2 = new File("Book2.csv");
+		BufferedReader br2 = new BufferedReader(new FileReader(csvfile));
+		String line2 = "";
+		ArrayList<String> careerName = new ArrayList<String>(0);
+		ArrayList<String> fpt1 = new ArrayList<String>(0);
+		ArrayList<String> fpt2 = new ArrayList<String>(0);
+		
+		try {
+
+			while ((line = br2.readLine()) != null) {
+				String[] count = line.split(",");
+				careerName.add(count[0]);
+				fpt1.add(count[1]);
+				fpt2.add(count[2]);
+
+			}
+
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+
+		}
 
 		int numOfCs = 30;
 		Career[] allCs = new Career[numOfCs];
