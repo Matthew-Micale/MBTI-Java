@@ -421,9 +421,13 @@ public class driver
 	}
 	}
 		
-		
+	for(int i = 0; i < numOfCs; i++)
+	{
+		allCs[i] = new Career(careerName.get(i),ftp1a.get(i),ftp2a.get(i));
+	}
 
 		
+	/*
 		allCs[0] = new Career("Engineer", INTJH, INTJL);
 		allCs[1] = new Career("Dentist", ISTJL, INTJL);
 		allCs[2] = new Career("Counsler", INFJL, INFJH);
@@ -454,6 +458,7 @@ public class driver
 		allCs[27] = new Career("EMT",ISTPL,ESTPL);
 		allCs[28] = new Career("Clergy",INFJL,INFJH);
 		allCs[29] = new Career("Civil Engineer",ESTPL,ISTPL);
+		*/
 		
 
 // PersonalityType object calculate is used to keep a running score of each Trait
