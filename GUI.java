@@ -8,23 +8,21 @@ public class GUI implements ChangeListener {
 	// declares variables
 	private int width, height;
 	private JFrame frame;
-	private JPanel p1, p2;
-	private JLabel lblQ, lblfill;
+	private JLabel lblQ;
 	private JButton btnNex, btnPre;
 	private JSlider slider;
 	private driver answers;
+	private GridBagConstraints gbc = new GridBagConstraints();
 
 	// Constructor
 	public GUI(int w, int h) {
 		// declares all of the variables and gui we are going to use
 		frame = new JFrame();
-		p1 = new JPanel();
-		p2 = new JPanel();
 		slider = new JSlider(JSlider.HORIZONTAL, 1, 5, 1);
 		btnNex = new JButton("Next Question");
 		btnPre = new JButton("Previous Question");
 		lblQ = new JLabel("Do you consider yourself a Think or a Feeler");
-		lblfill = new JLabel("FILLING IN SPACE");
+		
 		// sets the width and height of the window
 		width = w;
 		height = h;
@@ -33,13 +31,8 @@ public class GUI implements ChangeListener {
 	// sets all the GUI sizes and variables
 	public void setupGUI() {
 		// sets the window size and declares how the window is going to flow
-		// frame.setSize(width,height);
-		p1.setBorder(BorderFactory.createEmptyBorder(30, 30, 10, 30));
-		p1.setLayout(new GridLayout(0, 2));
-		// FlowLayout layout = new FlowLayout();
-		p2.setLayout(new GridLayout(0, 2, 5, 10));
-
-		slider.setFont(new Font("Serif", Font.PLAIN, 15));
+		lblQ.setFont(new Font("Verdana", Font.PLAIN, 18));
+		slider.setFont(new Font("Verdana", Font.PLAIN, 15));
 		slider.setMajorTickSpacing(1);
 		slider.setPaintTrack(true);
 		slider.setPaintTicks(true);
@@ -47,21 +40,39 @@ public class GUI implements ChangeListener {
 		slider.addChangeListener(this);
 
 		frame.setPreferredSize(new Dimension(width, height));
-		frame.add(p1, "North");
-		frame.add(p2, "South");
-		// frame.add(p1, BorderLayout.CENTER);
-		// frame.add(panel2, BorderLayout.CENTER);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setTitle("MBTI+");
 
 		// sets the flow of the windows an the layout
-		p1.add(lblQ);
-
-		p2.add(slider);
-		p2.add(lblfill);
-
-		p2.add(btnNex);
-		p2.add(btnPre);
+		frame.setLayout(new GridBagLayout());
+		
+		//sets the position of each jbutton and jlabel
+		gbc.gridx = 0;
+		gbc.gridy = 0;
+		gbc.gridwidth = 2;
+		gbc.insets = new Insets(5,5,5,5);
+		frame.add(lblQ,gbc);
+		
+		gbc.gridx = 0;
+		gbc.gridy = 1;
+		gbc.gridwidth = 2;
+		gbc.fill = GridBagConstraints.HORIZONTAL;
+		gbc.insets = new Insets(5,5,5,5);
+		frame.add(slider,gbc);
+		
+		gbc.gridx = 0;
+		gbc.gridy = 2;
+		gbc.gridwidth = 1;
+		//gbc.fill = GridBagConstraints.HORIZONTAL;
+		gbc.insets = new Insets(5,5,5,5);
+		frame.add(btnNex,gbc);
+		
+		gbc.gridx = 1;
+		gbc.gridy = 2;
+		gbc.gridwidth = 1;
+		//gbc.fill = GridBagConstraints.HORIZONTAL;
+		gbc.insets = new Insets(5,5,5,5);
+		frame.add(btnPre,gbc);
 
 		frame.pack();
 		frame.setVisible(true);
