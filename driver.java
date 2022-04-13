@@ -200,9 +200,230 @@ public class driver
 			e.printStackTrace();
 
 		}
-
+		
 		int numOfCs = 30;
 		Career[] allCs = new Career[numOfCs];
+		
+		ArrayList<FinalPersonalityType> ftp1a = new ArrayList<FinalPersonalityType>(0);
+		ArrayList<FinalPersonalityType> ftp2a = new ArrayList<FinalPersonalityType>(0);
+		
+		
+		for(String x : fpt1)
+		{
+			switch(x)
+			{
+		case "INTJH":
+			ftp1a.add(INTJH);
+			break;
+		case "INTJL":
+			ftp1a.add(INTJL);
+			break;
+		case "INTPH":
+			ftp1a.add(INTPH);
+			break;
+		case "INTPL":
+			ftp1a.add(INTPL);
+			break;
+		case "INFJH":
+			ftp1a.add(INFJH);
+			break;
+		case "INFJL":
+			ftp1a.add(INFJL);
+			break;
+		case "INFPH":
+			ftp1a.add(INFPH);
+			break;
+		case "INFPL":
+			ftp1a.add(INFPL);
+			break;
+		case "ISTJH":
+			ftp1a.add(ISTJH);
+			break;
+		case "ISTJL":
+			ftp1a.add(ISTJL);
+			break;
+		case "ISTPH":
+			ftp1a.add(ISTPH);
+			break;
+		case "ISTPL":
+			ftp1a.add(ISTPL);
+			break;
+		case "ISFJH":
+			ftp1a.add(ISFJH);
+			break;
+		case "ISFJL":
+			ftp1a.add(ISFJL);
+			break;
+		case "ISFPH":
+			ftp1a.add(ISFPH);
+			break;
+		case "ISFPL":
+			ftp1a.add(ISFPL);
+			break;
+		case "ENTJH":
+			ftp1a.add(ENTJH);
+			break;
+		case "ENTJL":
+			ftp1a.add(ENTJL);
+			break;
+		case "ENTPH":
+			ftp1a.add(ENTPH);
+			break;
+		case "ENTPL":
+			ftp1a.add(ENTPL);
+			break;
+		case "ENFJH":
+			ftp1a.add(ENFJH);
+			break;
+		case "ENFJL":
+			ftp1a.add(ENFJL);
+			break;
+		case "ENFPH":
+			ftp1a.add(ENFPH);
+			break;
+		case "ENFPL":
+			ftp1a.add(ENFPL);
+			break;
+		case "ESTJH":
+			ftp1a.add(ESTJH);
+			break;
+		case "ESTJL":
+			ftp1a.add(ESTJL);
+			break;
+		case "ESTPH":
+			ftp1a.add(ESTPH);
+			break;
+		case "ESTPL":
+			ftp1a.add(ESTPL);
+			break;
+		case "ESFJH":
+			ftp1a.add(ESFJH);
+			break;
+		case "ESFJL":
+			ftp1a.add(ESFJL);
+			break;
+		case "ESFPH":
+			ftp1a.add(ESFPH);
+			break;
+		case "ESFPL":
+			ftp1a.add(ESFPL);
+			break;
+		default:
+			ftp1a.add(null);
+			}
+
+		}
+		
+	for(String x : fpt2)
+	{
+		
+	switch(x)
+	{
+	case "INTJH":
+		ftp2a.add(INTJH);
+		break;
+	case "INTJL":
+		ftp2a.add(INTJL);
+		break;
+	case "INTPH":
+		ftp2a.add(INTPH);
+		break;
+	case "INTPL":
+		ftp2a.add(INTPL);
+		break;
+	case "INFJH":
+		ftp2a.add(INFJH);
+		break;
+	case "INFJL":
+		ftp2a.add(INFJL);
+		break;
+	case "INFPH":
+		ftp2a.add(INFPH);
+		break;
+	case "INFPL":
+		ftp2a.add(INFPL);
+		break;
+	case "ISTJH":
+		ftp2a.add(ISTJH);
+		break;
+	case "ISTJL":
+		ftp2a.add(ISTJL);
+		break;
+	case "ISTPH":
+		ftp2a.add(ISTPH);
+		break;
+	case "ISTPL":
+		ftp2a.add(ISTPL);
+		break;
+	case "ISFJH":
+		ftp2a.add(ISFJH);
+		break;
+	case "ISFJL":
+		ftp2a.add(ISFJL);
+		break;
+	case "ISFPH":
+		ftp2a.add(ISFPH);
+		break;
+	case "ISFPL":
+		ftp2a.add(ISFPL);
+		break;
+	case "ENTJH":
+		ftp2a.add(ENTJH);
+		break;
+	case "ENTJL":
+		ftp2a.add(ENTJL);
+		break;
+	case "ENTPH":
+		ftp2a.add(ENTPH);
+		break;
+	case "ENTPL":
+		ftp2a.add(ENTPL);
+		break;
+	case "ENFJH":
+		ftp2a.add(ENFJH);
+		break;
+	case "ENFJL":
+		ftp2a.add(ENFJL);
+		break;
+	case "ENFPH":
+		ftp2a.add(ENFPH);
+		break;
+	case "ENFPL":
+		ftp2a.add(ENFPL);
+		break;
+	case "ESTJH":
+		ftp2a.add(ESTJH);
+		break;
+	case "ESTJL":
+		ftp2a.add(ESTJL);
+		break;
+	case "ESTPH":
+		ftp2a.add(ESTPH);
+		break;
+	case "ESTPL":
+		ftp2a.add(ESTPL);
+		break;
+	case "ESFJH":
+		ftp2a.add(ESFJH);
+		break;
+	case "ESFJL":
+		ftp2a.add(ESFJL);
+		break;
+	case "ESFPH":
+		ftp2a.add(ESFPH);
+		break;
+	case "ESFPL":
+		ftp2a.add(ESFPL);
+		break;
+	default:
+		ftp2a.add(null);
+
+	}
+	}
+		
+		
+
+		
 		allCs[0] = new Career("Engineer", INTJH, INTJL);
 		allCs[1] = new Career("Dentist", ISTJL, INTJL);
 		allCs[2] = new Career("Counsler", INFJL, INFJH);
