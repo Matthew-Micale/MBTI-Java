@@ -462,7 +462,7 @@ public class driver
 
 		PersonalityType calculate = new PersonalityType();
 		 GUI screen = new GUI(1040,480);
-		 screen.setupGUI();
+		 screen.setupInfo();
 		 screen.setupButtonListeners();
 		 
 

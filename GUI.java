@@ -59,6 +59,10 @@ public class GUI implements ChangeListener {
 
 	// sets all the GUI sizes and variables
 	public void setupGUI() {
+		
+		
+		qframe.setLocation(inframe.getLocation());
+		
 		// sets the window size and declares how the window is going to flow
 		lblQ.setFont(new Font("Verdana", Font.PLAIN, 18));
 		slider.setFont(new Font("Verdana", Font.PLAIN, 15));
