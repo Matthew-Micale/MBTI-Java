@@ -1,30 +1,30 @@
-         Engineer, INTJH, INTJL
-         Dentist, ISTJL, INTJL
-         Counsler, INFJL, INFJH
-         HR Director, ENFJL, ENFPL
-         Construction Worker, ISTPL, ISTPH
-         Psychologist, ESFJL, ESFJH
-         Artist, INFPH, ISFPH
-         Event Planner, ESFPL, ESFPH
-         Reporter, ENFPL, ESFPL
-         Firefighter, ESTPL, ESTJL
-         Accountant, ISTJH, ISTJL
-         Photographer, ISFJH, ISFJL
-         Financial Planner, ENTPL, INTPL
-         Veterinarian, ISFPL, ESFPL
-         Marketer, ESTPL, ESTPH
-         Teacher, ENFPL, ENFPH
-         Police Officer, ESTJL,ISTJL
-         Social Worker, ISFPL,ESFPL
-         Lawyer, INTPL,INTJL
-         Writer, INTPL,INTPH
-         Musician,ENFPH,ENFPL
-         Tour Guide,ENFPH,ENFPL
-         Dental Hygenist,ISFPH,ISFPL
-         Pharmacist,ISTPL,ISTJL
-         Teacher,ENFJL,ENFJH
-         Pilot,ENTJL,INTJL
-         Secretary,ESFJL,ESFJH
-         EMT,ISTPL,ESTPL
-         Clergy,INFJL,INFJH
-         Civil Engineer,ESTPL,ISTPL
+Engineer,INTJH,INTJL
+ Dentist,ISTJL,INTJL
+ Counsler,INFJL,INFJH
+ HR Director,ENFJL,ENFPL
+ Construction Worker,ISTPL,ISTPH
+ Psychologist,ESFJL,ESFJH
+ Artist,INFPH,ISFPH
+Event Planner,ESFPL,ESFPH
+ Reporter,ENFPL,ESFPL
+ Firefighter,ESTPL,ESTJL
+ Accountant,ISTJH,ISTJL
+ Photographer,ISFJH,ISFJL
+ Financial Planner,ENTPL,INTPL
+ Veterinarian,ISFPL,ESFPL
+ Marketer,ESTPL,ESTPH
+ Teacher,ENFPL,ENFPH
+ Police Officer,ESTJL,ISTJL
+ Social Worker,ISFPL,ESFPL
+ Lawyer,INTPL,INTJL
+ Writer,INTPL,INTPH
+ Musician,ENFPH,ENFPL
+ Tour Guide,ENFPH,ENFPL
+ Dental Hygenist,ISFPH,ISFPL
+ Pharmacist,ISTPL,ISTJL
+ Teacher,ENFJL,ENFJH
+ Pilot,ENTJL,INTJL
+ Secretary,ESFJL,ESFJH
+EMT,ISTPL,ESTPL
+ Clergy,INFJL,INFJH
+ CivilEngineer,ESTPL,ISTPL
