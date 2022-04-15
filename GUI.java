@@ -8,8 +8,8 @@ public class GUI implements ChangeListener {
 	// declares variables
 	private int width, height;
 	private JFrame qframe, inframe;
-	private JLabel lblQ;
-	private JButton btnNex, btnPre;
+	private JLabel lblQ, lblIntro;
+	private JButton btnNex, btnPre,btnstart;
 	private JSlider slider;
 	//private driver answers;
 	private GridBagConstraints gbc = new GridBagConstraints();
@@ -22,7 +22,12 @@ public class GUI implements ChangeListener {
 		slider = new JSlider(JSlider.HORIZONTAL, 1, 5, 1);
 		btnNex = new JButton("Next Question");
 		btnPre = new JButton("Previous Question");
+		btnstart = new JButton("Start Assessment");
 		lblQ = new JLabel("Do you consider yourself a Think or a Feeler");
+		lblIntro = new JLabel("<html>This program goal is to offer job recommendations to individuals based on their personality types, the questions of consist the 4 personality spheres from <br/>"
+				+ "used in the Myers–Briggs Type Indicator. After X amount of questions a user will get a recommendation. The target audience is mainly individuals in a stage <br/>"
+				+ "of transitions within their lives (people looking for new jobs, people entering the job market, people trying to find out what career they would want to <br/>"
+				+ "study)<html>");
 		
 		// sets the width and height of the window
 		width = w;
@@ -30,7 +35,26 @@ public class GUI implements ChangeListener {
 	}
 	
 	public void setupInfo() {
+		lblIntro.setFont(new Font("Verdana", Font.PLAIN, 12));
 		
+		btnstart.setFont(new Font("Verdana", Font.PLAIN, 12));
+		
+		inframe.setSize(new Dimension(width,height));
+		inframe.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		inframe.setTitle("MBTI+");
+		inframe.setVisible(true);
+		
+		inframe.setLayout(new GridBagLayout());
+		gbc.gridx = 2;
+		gbc.gridy = 0;
+		gbc.gridwidth = 3;
+		//gbc.insets = new Insets(5,5,5,5);
+		inframe.add(lblIntro);
+		
+		
+		gbc.gridx = 2;
+		gbc.gridy = 1;
+		inframe.add(btnstart);
 	}
 
 	// sets all the GUI sizes and variables
@@ -90,17 +114,27 @@ public class GUI implements ChangeListener {
 			@Override
 			public void actionPerformed(ActionEvent ae) {
 				// lblQ.setText("Nex");
-				System.out.println("false");
+				//System.out.println("false");
 			}
 		};
 		// gives actions to button previous
 		ActionListener ActPre = new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent ae) {
-				System.out.println("I pass through Pre");
+				//System.out.println("I pass through Pre");
+			}
+		};
+		
+		//displays the questions screen and turns off the intro frame
+		ActionListener ActStart = new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent ae) {
+				inframe.setVisible(false);
+				setupGUI();
 			}
 		};
 
+		btnstart.addActionListener(ActStart);
 		btnNex.addActionListener(ActNex);
 		btnPre.addActionListener(ActPre);
 	}
