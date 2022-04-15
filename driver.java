@@ -177,7 +177,7 @@ public class driver
 // Instantiating all Careers with their respective personality types	
 		
 		File csvfile2 = new File("b2.csv");
-		BufferedReader br2 = new BufferedReader(new FileReader(csvfile));
+		BufferedReader br2 = new BufferedReader(new FileReader(csvfile2));
 		String line2 = "";
 		ArrayList<String> careerName = new ArrayList<String>(0);
 		ArrayList<String> fpt1 = new ArrayList<String>(0);
@@ -185,7 +185,7 @@ public class driver
 		
 		try {
 
-			while ((line = br2.readLine()) != null) {
+			while ((line2 = br2.readLine()) != null) {
 				String[] count = line.split(",");
 				careerName.add(count[0]);
 				fpt1.add(count[1]);
