@@ -7,17 +7,18 @@ public class GUI implements ChangeListener {
 
 	// declares variables
 	private int width, height;
-	private JFrame frame;
+	private JFrame qframe, inframe;
 	private JLabel lblQ;
 	private JButton btnNex, btnPre;
 	private JSlider slider;
-	private driver answers;
+	//private driver answers;
 	private GridBagConstraints gbc = new GridBagConstraints();
 
 	// Constructor
 	public GUI(int w, int h) {
 		// declares all of the variables and gui we are going to use
-		frame = new JFrame();
+		qframe = new JFrame();
+		inframe = new JFrame();
 		slider = new JSlider(JSlider.HORIZONTAL, 1, 5, 1);
 		btnNex = new JButton("Next Question");
 		btnPre = new JButton("Previous Question");
@@ -26,6 +27,10 @@ public class GUI implements ChangeListener {
 		// sets the width and height of the window
 		width = w;
 		height = h;
+	}
+	
+	public void setupInfo() {
+		
 	}
 
 	// sets all the GUI sizes and variables
@@ -39,43 +44,43 @@ public class GUI implements ChangeListener {
 		slider.setPaintLabels(true);
 		slider.addChangeListener(this);
 
-		frame.setPreferredSize(new Dimension(width, height));
-		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		frame.setTitle("MBTI+");
+		qframe.setPreferredSize(new Dimension(width, height));
+		qframe.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		qframe.setTitle("MBTI+");
 
 		// sets the flow of the windows an the layout
-		frame.setLayout(new GridBagLayout());
+		qframe.setLayout(new GridBagLayout());
 		
 		//sets the position of each jbutton and jlabel
 		gbc.gridx = 0;
 		gbc.gridy = 0;
 		gbc.gridwidth = 2;
 		gbc.insets = new Insets(5,5,5,5);
-		frame.add(lblQ,gbc);
+		qframe.add(lblQ,gbc);
 		
 		gbc.gridx = 0;
 		gbc.gridy = 1;
 		gbc.gridwidth = 2;
 		gbc.fill = GridBagConstraints.HORIZONTAL;
 		gbc.insets = new Insets(5,5,5,5);
-		frame.add(slider,gbc);
+		qframe.add(slider,gbc);
 		
 		gbc.gridx = 0;
 		gbc.gridy = 2;
 		gbc.gridwidth = 1;
 		//gbc.fill = GridBagConstraints.HORIZONTAL;
 		gbc.insets = new Insets(5,5,5,5);
-		frame.add(btnNex,gbc);
+		qframe.add(btnNex,gbc);
 		
 		gbc.gridx = 1;
 		gbc.gridy = 2;
 		gbc.gridwidth = 1;
 		//gbc.fill = GridBagConstraints.HORIZONTAL;
 		gbc.insets = new Insets(5,5,5,5);
-		frame.add(btnPre,gbc);
+		qframe.add(btnPre,gbc);
 
-		frame.pack();
-		frame.setVisible(true);
+		qframe.pack();
+		qframe.setVisible(true);
 
 	}
 
@@ -102,7 +107,7 @@ public class GUI implements ChangeListener {
 
 	public void stateChanged(ChangeEvent e) {
 		// lblQ.setText("Value is: " + slider.getValue());
-		answers = new driver(slider.getValue());
+		//answers = new driver(slider.getValue());
 		
 	}
 
