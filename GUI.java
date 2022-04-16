@@ -93,20 +93,20 @@ public class GUI implements ChangeListener {
 		gbc.insets = new Insets(5,5,5,5);
 		qframe.add(slider,gbc);
 		
-		gbc.gridx = 0;
+		gbc.gridx = 1;
 		gbc.gridy = 2;
 		gbc.gridwidth = 1;
 		//gbc.fill = GridBagConstraints.HORIZONTAL;
 		gbc.insets = new Insets(5,5,5,5);
 		qframe.add(btnNex,gbc);
 		
-		gbc.gridx = 1;
+		gbc.gridx = 0;
 		gbc.gridy = 2;
 		gbc.gridwidth = 1;
 		//gbc.fill = GridBagConstraints.HORIZONTAL;
 		gbc.insets = new Insets(5,5,5,5);
 		qframe.add(btnPre,gbc);
-
+		
 		qframe.pack();
 		qframe.setVisible(true);
 
@@ -152,6 +152,10 @@ public class GUI implements ChangeListener {
 	public void printQuestions(Question temp) {
 		// final JTextArea textArea = new JTextArea();
 		// textArea.setText(temp.getText());
-		lblQ.setText(temp.getText());
+		String q_text = temp.getText();
+		
+		System.out.println(q_text);
+		
+		//lblQ.setText(q_text);
 	}
 }

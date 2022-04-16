@@ -186,7 +186,7 @@ public class driver
 		try {
 
 			while ((line2 = br2.readLine()) != null) {
-				String[] count = line.split(",");
+				String[] count = line2.split(",");
 				careerName.add(count[0]);
 				fpt1.add(count[1]);
 				fpt2.add(count[2]);
@@ -467,6 +467,11 @@ public class driver
 		 
 
 		Scanner scan = new Scanner(System.in);
+		
+		
+		
+		
+		
 
 // Loop that asks the user questions and saves their responses	
 
