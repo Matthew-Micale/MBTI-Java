@@ -152,10 +152,7 @@ public class GUI implements ChangeListener {
 	public void printQuestions(Question temp) {
 		// final JTextArea textArea = new JTextArea();
 		// textArea.setText(temp.getText());
-		String q_text = temp.getText();
 		
-		System.out.println(q_text);
-		
-		//lblQ.setText(q_text);
+		lblQ.setText(temp.getText());
 	}
 }
