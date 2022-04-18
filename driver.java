@@ -9,13 +9,7 @@ import java.io.IOException;
 public class driver
 
 {
-	
-	private int Answer;
-	
-	driver(int a){
-		Answer = a;
-		System.out.println("I have pass though: " + Answer);
-	}
+
 
 	public static void main(String[] args) throws IOException 
 
@@ -93,7 +87,6 @@ public class driver
 
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
-
 		}
 
 // Instantiating ArrayLists for the Traits corresponding to each question
@@ -464,33 +457,24 @@ public class driver
 		 GUI screen = new GUI(1040,480);
 		 screen.setupInfo();
 		 screen.setupButtonListeners();
-		 
-
-		Scanner scan = new Scanner(System.in);
-		
-		
-		
-		
-		
 
 // Loop that asks the user questions and saves their responses	
 
+		 boolean checkNext = false;
+		 
 		for (int i = 0; i < numOfQs;) {
-
 			screen.printQuestions(allQs[i]);
-			System.out.println("Disagree completely: 1 2 Neutral: 3 4 Agree Comletely: 5");
-			int res = scan.nextInt();
-			if (res > 5 || res < 1) {
-				System.out.println("Please input a number from 1-5");
-			} else {
+			
+			if(checkNext == true) {
+				int res = screen.getSlider();
 				allRs[i] = new Response(allQs[i], res);
 				Trait temp = allRs[i].getDelta();
 				int id = temp.getId();
 				int w1 = allQs[i].getQWeight();
 				calculate.addResponse(id, w1);
 				i++;
+				checkNext = false;
 			}
-			
 		}
 
 // Creating a String out of the determined traits to link the responses to a FinalPersonalityType	
