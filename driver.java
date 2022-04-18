@@ -460,12 +460,13 @@ public class driver
 
 // Loop that asks the user questions and saves their responses	
 
-		 boolean checkNext = false;
 		 
+		 int temp1 = numOfQs;
+		 screen.setNext(false);
 		for (int i = 0; i < numOfQs;) {
 			screen.printQuestions(allQs[i]);
 			
-			if(checkNext == true) {
+			if(screen.getNext() == true) {
 				int res = screen.getSlider();
 				allRs[i] = new Response(allQs[i], res);
 				Trait temp = allRs[i].getDelta();
@@ -473,9 +474,15 @@ public class driver
 				int w1 = allQs[i].getQWeight();
 				calculate.addResponse(id, w1);
 				i++;
-				checkNext = false;
+				screen.setNext(false);
+				temp1--;
 			}
-		}
+			else if(temp1 == 0 && screen.getNext() == false)
+			{	
+			break;	
+			}
+			}
+		
 
 // Creating a String out of the determined traits to link the responses to a FinalPersonalityType	
 

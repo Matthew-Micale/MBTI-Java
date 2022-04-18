@@ -13,6 +13,7 @@ public class GUI implements ChangeListener {
 	private JSlider slider;
 	private driver d;
 	private GridBagConstraints gbc = new GridBagConstraints();
+	private boolean checkNext;
 
 	// Constructor
 	public GUI(int w, int h) {
@@ -117,7 +118,7 @@ public class GUI implements ChangeListener {
 		ActionListener ActNex = new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent ae) {
-				//d.setCheck();
+				setNext(true);
 			}
 		};
 		// gives actions to button previous
@@ -163,8 +164,13 @@ public class GUI implements ChangeListener {
 	
 	public boolean getNext() {
 		
-		return true;
+		return checkNext;
+	}
+	
+	public void setNext(boolean temp)
+	{
+	checkNext = temp;	
+	}
 	}
 
 	
-}
