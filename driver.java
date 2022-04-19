@@ -454,7 +454,7 @@ public class driver
 // PersonalityType object calculate is used to keep a running score of each Trait
 
 		PersonalityType calculate = new PersonalityType();
-		 GUI screen = new GUI(1040,480);
+		 GUI screen = new GUI(1240,480);
 		 screen.setupInfo();
 		 screen.setupButtonListeners();
 
@@ -481,7 +481,8 @@ public class driver
 			{	
 			break;	
 			}
-			}
+			
+		}
 		
 
 // Creating a String out of the determined traits to link the responses to a FinalPersonalityType	

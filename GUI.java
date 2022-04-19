@@ -8,12 +8,13 @@ public class GUI implements ChangeListener {
 	// declares variables
 	private int width, height;
 	private JFrame qframe, inframe;
-	private JLabel lblQ, lblIntro;
+	private JLabel lblQ, lblIntro,lblDis;
 	private JButton btnNex, btnPre,btnstart;
 	private JSlider slider;
-	private driver d;
 	private GridBagConstraints gbc = new GridBagConstraints();
 	private boolean checkNext;
+	
+	
 
 	// Constructor
 	public GUI(int w, int h) {
@@ -25,37 +26,51 @@ public class GUI implements ChangeListener {
 		btnPre = new JButton("Previous Question");
 		btnstart = new JButton("Start Assessment");
 		lblQ = new JLabel("Do you consider yourself a Think or a Feeler");
-		lblIntro = new JLabel("<html>This program goal is to offer job recommendations to individuals based on their personality types, the questions of consist the 4 personality spheres from <br/>"
-				+ "used in the Myers–Briggs Type Indicator. After X amount of questions a user will get a recommendation. The target audience is mainly individuals in a stage <br/>"
-				+ "of transitions within their lives (people looking for new jobs, people entering the job market, people trying to find out what career they would want to <br/>"
-				+ "study)<html>");
+		lblIntro = new JLabel("<html>This program goal is to offer job recommendations to individuals based on their personality types, the<br/>"
+				+ "questions of consist the 4 personality spheres from used in the Myers–Briggs Type Indicator. After X<br/>"
+				+ "amount of questions a user will get a recommendation. The target audience is mainly individuals in a<br/>"
+				+ "stage of transitions within their lives (people looking for new jobs, people entering the job market,<br/>"
+				+ "people trying to find out what career they would want to study).<html>");
+		
+		lblDis = new JLabel("<html>This is just a a short disclaimer that this assesment is not ment to be used for recommendation, and that everything<br/>"
+				+ "displayed for the assesment is use for just a better sense of direction in what career you'd want to do.<html>");
+		
 		
 		// sets the width and height of the window
 		width = w;
 		height = h;
 	}
 	
+	//sets up the home page
 	public void setupInfo() {
-		lblIntro.setFont(new Font("Verdana", Font.PLAIN, 12));
-		
-		btnstart.setFont(new Font("Verdana", Font.PLAIN, 12));
-		
+		lblIntro.setFont(new Font("Verdana", Font.PLAIN, 18));
+		lblDis.setFont(new Font("Verdana", Font.ITALIC, 15));
+		btnstart.setFont(new Font("Verdana", Font.PLAIN, 15));
 		inframe.setSize(new Dimension(width,height));
 		inframe.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		inframe.setTitle("MBTI+");
 		inframe.setVisible(true);
 		
 		inframe.setLayout(new GridBagLayout());
-		gbc.gridx = 2;
+		gbc.gridx = 0;
 		gbc.gridy = 0;
-		gbc.gridwidth = 3;
-		//gbc.insets = new Insets(5,5,5,5);
-		inframe.add(lblIntro);
+		gbc.gridwidth = 2;
+		gbc.insets = new Insets(5,5,5,5);
+		inframe.add(lblIntro,gbc);
 		
-		
-		gbc.gridx = 2;
+		gbc.gridx = 0;
 		gbc.gridy = 1;
-		inframe.add(btnstart);
+		gbc.gridwidth = 2;
+		gbc.insets = new Insets(5,5,5,5);
+		inframe.add(lblDis,gbc);
+		
+		
+		gbc.gridx = 0;
+		gbc.gridy = 2;
+		gbc.gridwidth = 2;
+		gbc.fill = GridBagConstraints.HORIZONTAL;
+		gbc.insets = new Insets(5,5,5,5);
+		inframe.add(btnstart,gbc);
 	}
 
 	// sets all the GUI sizes and variables
@@ -97,14 +112,12 @@ public class GUI implements ChangeListener {
 		gbc.gridx = 1;
 		gbc.gridy = 2;
 		gbc.gridwidth = 1;
-		//gbc.fill = GridBagConstraints.HORIZONTAL;
 		gbc.insets = new Insets(5,5,5,5);
 		qframe.add(btnNex,gbc);
 		
 		gbc.gridx = 0;
 		gbc.gridy = 2;
 		gbc.gridwidth = 1;
-		//gbc.fill = GridBagConstraints.HORIZONTAL;
 		gbc.insets = new Insets(5,5,5,5);
 		qframe.add(btnPre,gbc);
 		
@@ -113,6 +126,7 @@ public class GUI implements ChangeListener {
 
 	}
 
+	//gives actions to the button
 	public void setupButtonListeners() {
 		// gives actions to button next
 		ActionListener ActNex = new ActionListener() {
@@ -149,6 +163,7 @@ public class GUI implements ChangeListener {
 		
 	}
 
+	//prints the qustion for the user to answer
 	public void printQuestions(Question temp) {
 		// final JTextArea textArea = new JTextArea();
 		// textArea.setText(temp.getText());
@@ -162,6 +177,7 @@ public class GUI implements ChangeListener {
 		return slider.getValue();
 	}
 	
+	//check if the user is ready for the next question
 	public boolean getNext() {
 		
 		return checkNext;
