@@ -461,13 +461,15 @@ public class driver
 // Loop that asks the user questions and saves their responses	
 
 		 
-		 int temp1 = numOfQs;
-		 screen.setNext(false);
+		int temp1 = numOfQs;
+		int res = 0;
+		screen.setNext(false);
+		screen.setPre(false);
 		for (int i = 0; i < numOfQs;) {
 			screen.printQuestions(allQs[i]);
 			
 			if(screen.getNext() == true) {
-				int res = screen.getSlider();
+				res = screen.getSlider();
 				allRs[i] = new Response(allQs[i], res);
 				Trait temp = allRs[i].getDelta();
 				int id = temp.getId();
@@ -480,6 +482,16 @@ public class driver
 			else if(temp1 == 0 && screen.getNext() == false)
 			{	
 			break;	
+			}
+			else if(screen.getPre() == true){
+				i--;
+				allRs[i] = new Response(allQs[i], res);
+				Trait temp = allRs[i].getDelta();
+				int id = temp.getId();
+				int w1 = allQs[i].getQWeight();
+				calculate.addResponse(id, w1);
+				screen.setPre(false);
+				temp1++;
 			}
 			
 		}

@@ -12,7 +12,7 @@ public class GUI implements ChangeListener {
 	private JButton btnNex, btnPre,btnstart;
 	private JSlider slider;
 	private GridBagConstraints gbc = new GridBagConstraints();
-	private boolean checkNext;
+	private boolean checkNext, checkPre;
 	
 	
 
@@ -139,7 +139,7 @@ public class GUI implements ChangeListener {
 		ActionListener ActPre = new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent ae) {
-				//System.out.println("I pass through Pre");
+				setPre(true);
 			}
 		};
 		
@@ -185,8 +185,19 @@ public class GUI implements ChangeListener {
 	
 	public void setNext(boolean temp)
 	{
-	checkNext = temp;	
+		checkNext = temp;	
 	}
+	
+	public boolean getPre() {
+		
+		return checkPre;
 	}
+	
+	public void setPre(boolean temp)
+	{
+		checkPre = temp;	
+	}
+	
+}
 
 	
