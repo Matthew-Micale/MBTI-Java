@@ -1,4 +1,4 @@
-Engineer,INTJH,INTJL
+Software Engineer,INTJH,INTJL
  Dentist,ISTJL,INTJL
  Counsler,INFJL,INFJH
  HR Director,ENFJL,ENFPL
@@ -26,5 +26,16 @@ Event Planner,ESFPL,ESFPH
  Pilot,ENTJL,INTJL
  Secretary,ESFJL,ESFJH
 EMT,ISTPL,ESTPL
- Clergy,INFJL,INFJH
- CivilEngineer,ESTPL,ISTPL
+Clergy,INFJL,INFJH
+Civil Engineer,ESTPL,ISTPL
+Librarian,INFJL,INFJH
+Sales Manager,ENFJL,ESFJL
+Medical Researcher,ISTJL,INTJL
+Physical Therapist,INFPL,INFPH
+Flight Attendant,ESFPL,ESFPH
+News Anchor,ENFPL,ESFPL
+Judge,ESTJL,ISTJL
+Professor,INTPL,ENTPL
+Web Developer,INTPL,INTPH
+Social Media Manager,ISFPL,ISFPH
+Mechanical Engineer,INTJL,ISTJL
