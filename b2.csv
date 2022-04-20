@@ -1,50 +1,100 @@
- Accountant,ISTJH,ISTJL
- Artist,INFPH,ISFPH
- Construction Worker,ISTPL,ISTPH
- Counsler,INFJL,INFJH
- Dental Hygenist,ISFPH,ISFPL
- Dentist,ISTJL,INTJL
- Financial Planner,ENTPL,INTPL
- Firefighter,ESTPL,ESTJL
- HR Director,ENFJL,ENFPL
- Lawyer,INTPL,INTJL
- Marketer,ESTPL,ESTPH
- Musician,ENFPH,ENFPL
- Pharmacist,ISTPL,ISTJL
- Photographer,ISFJH,ISFJL
- Pilot,ENTJL,INTJL
- Police Officer,ESTJL,ISTJL
- Psychologist,ESFJL,ESFJH
- Reporter,ENFPL,ESFPL
- Secretary,ESFJL,ESFJH
- Social Worker,ISFPL,ESFPL
- Teacher,ENFPL,ENFPH
- Teacher,ENFJL,ENFJH
- Tour Guide,ENFPH,ENFPL
- Veterinarian,ISFPL,ESFPL
- Writer,INTPL,INTPH
+Accountant,ISTJH,ISTJL
+Actor,ENFPL,ENFPH
+Architect,ISTPL,ISTPH
+Artist,INFPH,ISFPH
+Bartender,ESFPL,ESFPH
 Biomedical Engineer,INTPL,ISTPL
+Bookkeeper,ISFPL,ISFPH
+Carpenter,INTPL,INTPH
+Chef,ISFPL,ISFPH
+Child Care Worker,ISFPL,ISFPH
+City Planner,ENTJL,ENTJH
 Civil Engineer,ESTPL,ISTPL
+Civil Engineer,INTJL,INTJH
 Clergy,INFJL,INFJH
+Comedian,ESFPL,ESFPH
+Composer,ENFPL,ENFPH
+Computer Engineer,INTJL,INTJH
+Construction Worker,ISTPL,ISTPH
 Copywriter,ENTPL,ENTPH
+Corporate Strategist,INTJL,ENTJL
+Cosmetologist,ESFJL,ESFJH
+Counsler,INFJL,INFJH
+Customer Service,ISFJL,ISFJH
+Dental Hygenist,ISFPH,ISFPL
+Dentist,ISTJL,INTJL
+Dermatologist,ESFJL,ISFJL
+Detective,ISTJL,ESTJL
+Economist,INTPL,INTPH
+Electrical Engineer,ISTJL,ISTJH
+Electrician,ESTPL,ESTPH
 EMT,ISTPL,ESTPL
+Entertainment Agent ,ESTPL,ENTPL
+Entrepreneur,ENTPL,ESTPL
+ER Physician,ISTPL,ESTPL
 Event Planner,ESFPL,ESFPH
+Farmer,ESFPL,ESFPH
+Fashion Designer,ISFPL,ISFPH
+Film Director,ISFJL,ISFJH
+Financial Planner,ENTPL,INTPL
+Firefighter,ESTPL,ESTJL
 Flight Attendant,ESFPL,ESFPH
+Graphic Designer,INFJL,INFJH
+Hairdresser,ESFJL,ESFJH
+HR Director,ENFJL,ENFPL
+Insurance Sales Agent,ESTJL,ESTJH
+Interior Designer,INFJL,INFJH
+Investment Banker,INTJL,ENTJL
+Jeweler,ISFPL,ISFPH
 Journalist,INFPL,INFPH
 Judge,ESTJL,ISTJL
+Lawyer,INTPL,INTJL
 Librarian,INFJL,INFJH
+Marketer,ESTPL,ESTPH
+Mechanic,ISTPL,ISTPH
 Mechanical Engineer,INTJL,ISTJL
 Medical Researcher,ISTJL,INTJL
 Mental Health Professional,INFPL,INFPH
+Military Officer,ESTJL,ISTJL
+Morgtage Banker,ENTJL,ENTJH
+Musician,ENFPH,ENFPL
 News Anchor,ENFPL,ESFPL
+Nurse,ESFPL,ISFPL
 Paramedic,ESTPL,ISTPL
 Pediatrician,ESFJL,ESTJL
+Personal Trainer,ISFPL,ISFPH
+Pharmacist,ISTPL,ISTJL
+Photographer,ISFJH,ISFJL
 Physical Therapist,INFPL,INFPH
+Physician,ISFJL,ISTJL
+Physicist,INTPL,INTPH
+Pilot,ENTJL,INTJL
+Police Officer,ESTJL,ISTJL
 Politician,ENFPL,ENFJL
 Professor,INTPL,ENTPL
+Psychiatrist,INFPL,ENFPL
+Psychologist,ESFJL,ESFJH
+Public Relations Specialist,ENFJL,ENFJH
+Radiological Technologist,ESFJL,ESFJH
+Reporter,ENFPL,ESFPL
+Researcher,ISTPL,ISTPH
 Retail,ESFPL,ESFPH
 Sales Manager,ENFJL,ESFJL
+Secretary,ESFJL,ESFJH
+Singer,INFPL,INFPH
 Social Media Manager,ISFPL,ISFPH
+Social Worker,ISFPL,ESFPL
 Software Engineer,INTJH,INTJL
+Special Education Teacher,INFJL,INFJH
+Speech Pathologist,INFPL,INFPH
+Stock Trader,ENTPL,INTPL
 Surgeon,INTJL,ISTJL
+Teacher,ENFPL,ENFPH
+Technical Writer,INTPL,INTPH
+Tour Guide,ENFPH,ENFPL
+Truck Driver,ISFPL,ISFPH
+Veterinarian,ISFPL,ESFPL
+Veterinary Assistant,ISFPL,ESFPL
+Waiter,ESFPL,ESFPH
 Web Developer,INTPL,INTPH
+Writer,INTPL,INTPH
