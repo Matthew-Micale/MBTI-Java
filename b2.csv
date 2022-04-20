@@ -1,50 +1,50 @@
-Software Engineer,INTJH,INTJL
- Dentist,ISTJL,INTJL
- Counsler,INFJL,INFJH
- HR Director,ENFJL,ENFPL
- Construction Worker,ISTPL,ISTPH
- Psychologist,ESFJL,ESFJH
- Artist,INFPH,ISFPH
-Event Planner,ESFPL,ESFPH
- Reporter,ENFPL,ESFPL
- Firefighter,ESTPL,ESTJL
  Accountant,ISTJH,ISTJL
- Photographer,ISFJH,ISFJL
- Financial Planner,ENTPL,INTPL
- Veterinarian,ISFPL,ESFPL
- Marketer,ESTPL,ESTPH
- Teacher,ENFPL,ENFPH
- Police Officer,ESTJL,ISTJL
- Social Worker,ISFPL,ESFPL
- Lawyer,INTPL,INTJL
- Writer,INTPL,INTPH
- Musician,ENFPH,ENFPL
- Tour Guide,ENFPH,ENFPL
+ Artist,INFPH,ISFPH
+ Construction Worker,ISTPL,ISTPH
+ Counsler,INFJL,INFJH
  Dental Hygenist,ISFPH,ISFPL
+ Dentist,ISTJL,INTJL
+ Financial Planner,ENTPL,INTPL
+ Firefighter,ESTPL,ESTJL
+ HR Director,ENFJL,ENFPL
+ Lawyer,INTPL,INTJL
+ Marketer,ESTPL,ESTPH
+ Musician,ENFPH,ENFPL
  Pharmacist,ISTPL,ISTJL
- Teacher,ENFJL,ENFJH
+ Photographer,ISFJH,ISFJL
  Pilot,ENTJL,INTJL
+ Police Officer,ESTJL,ISTJL
+ Psychologist,ESFJL,ESFJH
+ Reporter,ENFPL,ESFPL
  Secretary,ESFJL,ESFJH
-EMT,ISTPL,ESTPL
-Clergy,INFJL,INFJH
-Civil Engineer,ESTPL,ISTPL
-Librarian,INFJL,INFJH
-Sales Manager,ENFJL,ESFJL
-Medical Researcher,ISTJL,INTJL
-Physical Therapist,INFPL,INFPH
-Flight Attendant,ESFPL,ESFPH
-News Anchor,ENFPL,ESFPL
-Judge,ESTJL,ISTJL
-Professor,INTPL,ENTPL
-Web Developer,INTPL,INTPH
-Social Media Manager,ISFPL,ISFPH
-Mechanical Engineer,INTJL,ISTJL
-Journalist,INFPL,INFPH
-Paramedic,ESTPL,ISTPL
-Retail,ESFPL,ESFPH
-Politician,ENFPL,ENFJL
-Pediatrician,ESFJL,ESTJL
-Mental Health Professional,INFPL,INFPH
-Surgeon,INTJL,ISTJL
+ Social Worker,ISFPL,ESFPL
+ Teacher,ENFPL,ENFPH
+ Teacher,ENFJL,ENFJH
+ Tour Guide,ENFPH,ENFPL
+ Veterinarian,ISFPL,ESFPL
+ Writer,INTPL,INTPH
 Biomedical Engineer,INTPL,ISTPL
+Civil Engineer,ESTPL,ISTPL
+Clergy,INFJL,INFJH
 Copywriter,ENTPL,ENTPH
+EMT,ISTPL,ESTPL
+Event Planner,ESFPL,ESFPH
+Flight Attendant,ESFPL,ESFPH
+Journalist,INFPL,INFPH
+Judge,ESTJL,ISTJL
+Librarian,INFJL,INFJH
+Mechanical Engineer,INTJL,ISTJL
+Medical Researcher,ISTJL,INTJL
+Mental Health Professional,INFPL,INFPH
+News Anchor,ENFPL,ESFPL
+Paramedic,ESTPL,ISTPL
+Pediatrician,ESFJL,ESTJL
+Physical Therapist,INFPL,INFPH
+Politician,ENFPL,ENFJL
+Professor,INTPL,ENTPL
+Retail,ESFPL,ESFPH
+Sales Manager,ENFJL,ESFJL
+Social Media Manager,ISFPL,ISFPH
+Software Engineer,INTJH,INTJL
+Surgeon,INTJL,ISTJL
+Web Developer,INTPL,INTPH
