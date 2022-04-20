@@ -459,8 +459,6 @@ public class driver
 		 screen.setupButtonListeners();
 
 // Loop that asks the user questions and saves their responses	
-
-		 
 		int temp1 = numOfQs;
 		int res = 0;
 		screen.setNext(false);
@@ -654,14 +652,18 @@ public class driver
 
 // Loop that outputs career recommendations based on personality type	
 
-		System.out.println("Career Recommendations:");
+		//System.out.println("Career Recommendations:");
+		
 		for (int i = 0; i < numOfCs; i++) {
-			if (allCs[i].checkMatch(calculateFinal))
+			
+			if (allCs[i].checkMatch(calculateFinal)) {
 				System.out.println(allCs[i].getJobTitle());
+				screen.setC(allCs[i].getJobTitle());
+				screen.setLbl();
+			}
 		}
 		
 // Closes buffer reader		
-		
 		br.close();	
 	}
 	

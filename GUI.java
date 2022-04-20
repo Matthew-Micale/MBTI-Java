@@ -7,6 +7,7 @@ public class GUI implements ChangeListener {
 
 	// declares variables
 	private int width, height;
+	private String career;
 	private JFrame qframe, inframe;
 	private JLabel lblQ, lblIntro,lblDis;
 	private JButton btnNex, btnPre,btnstart;
@@ -35,7 +36,7 @@ public class GUI implements ChangeListener {
 		lblDis = new JLabel("<html>This is just a a short disclaimer that this assesment is not ment to be used for recommendation, and that everything<br/>"
 				+ "displayed for the assesment is use for just a better sense of direction in what career you'd want to do.<html>");
 		
-		
+		career = "";
 		// sets the width and height of the window
 		width = w;
 		height = h;
@@ -44,8 +45,9 @@ public class GUI implements ChangeListener {
 	//sets up the home page
 	public void setupInfo() {
 		lblIntro.setFont(new Font("Verdana", Font.PLAIN, 18));
-		lblDis.setFont(new Font("Verdana", Font.ITALIC, 15));
+		lblDis.setFont(new Font("Verdana", Font.ITALIC, 12));
 		btnstart.setFont(new Font("Verdana", Font.PLAIN, 15));
+		
 		inframe.setSize(new Dimension(width,height));
 		inframe.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		inframe.setTitle("MBTI+");
@@ -157,6 +159,7 @@ public class GUI implements ChangeListener {
 		btnPre.addActionListener(ActPre);
 	}
 
+	//used to take actions from the slider
 	public void stateChanged(ChangeEvent e) {
 		// lblQ.setText("Value is: " + slider.getValue());
 		//answers = new driver(slider.getValue());
@@ -196,6 +199,20 @@ public class GUI implements ChangeListener {
 	public void setPre(boolean temp)
 	{
 		checkPre = temp;	
+	}
+	
+	public void setLbl() {
+		
+		//String c = career.replaceAll(" ", ",");
+		
+		btnNex.setEnabled(false);
+		btnPre.setEnabled(false);
+		lblQ.setText("Career Recommendations: " + career);
+		
+	}
+	
+	public void setC(String c){
+		career += c + ",";
 	}
 	
 }
