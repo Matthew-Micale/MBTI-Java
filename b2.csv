@@ -9,7 +9,6 @@ Carpenter,INTPL,INTPH
 Chef,ISFPL,ISFPH
 Child Care Worker,ISFPL,ISFPH
 City Planner,ENTJL,ENTJH
-Civil Engineer,ESTPL,ISTPL
 Civil Engineer,INTJL,INTJH
 Clergy,INFJL,INFJH
 Comedian,ESFPL,ESFPH
@@ -50,6 +49,7 @@ Journalist,INFPL,INFPH
 Judge,ESTJL,ISTJL
 Lawyer,INTPL,INTJL
 Librarian,INFJL,INFJH
+Life Coach,ENFJL,ENFJH
 Marketer,ESTPL,ESTPH
 Mechanic,ISTPL,ISTPH
 Mechanical Engineer,INTJL,ISTJL
