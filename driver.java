@@ -463,9 +463,11 @@ public class driver
 		int res = 0;
 		screen.setNext(false);
 		screen.setPre(false);
+		
+		
 		for (int i = 0; i < numOfQs;) {
 			screen.printQuestions(allQs[i]);
-			
+			screen.setPre(i);
 			if(screen.getNext() == true) {
 				res = screen.getSlider();
 				allRs[i] = new Response(allQs[i], res);
@@ -477,8 +479,7 @@ public class driver
 				screen.setNext(false);
 				temp1--;
 			}
-			else if(temp1 == 0 && screen.getNext() == false)
-			{	
+			else if(temp1 == 0 && screen.getNext() == false){	
 			break;	
 			}
 			else if(screen.getPre() == true){

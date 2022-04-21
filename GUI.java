@@ -176,33 +176,40 @@ public class GUI implements ChangeListener {
 	
 	//gets slider value and returns user answer
 	public int getSlider() {
-		
 		return slider.getValue();
 	}
 	
 	//check if the user is ready for the next question
 	public boolean getNext() {
-		
 		return checkNext;
 	}
 	
-	public void setNext(boolean temp)
-	{
+	//sets the next button to default
+	public void setNext(boolean temp){
 		checkNext = temp;	
 	}
 	
-	public boolean getPre() {
-		
+	//returns if the user wants to go back
+	public boolean getPre(){	
 		return checkPre;
 	}
 	
-	public void setPre(boolean temp)
-	{
-		checkPre = temp;	
+	
+	//overide method to disable the button if it at the first question
+	public void setPre(int i) {
+		if(i == 0) {
+			btnPre.setEnabled(false);
+		}else {
+			btnPre.setEnabled(true);
+		}
 	}
 	
-	public void setLbl() {
-		
+	//sets the back button to default
+	public void setPre(boolean temp){
+		checkPre = temp;
+	}
+	
+	public void setLbl(){
 		//String c = career.replaceAll(" ", ",");
 		
 		btnNex.setEnabled(false);
