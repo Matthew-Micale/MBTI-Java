@@ -464,7 +464,6 @@ public class driver
 		screen.setNext(false);
 		screen.setPre(false);
 		
-		
 		for (int i = 0; i < numOfQs;) {
 			screen.printQuestions(allQs[i]);
 			screen.setPre(i);
@@ -492,9 +491,7 @@ public class driver
 				screen.setPre(false);
 				temp1++;
 			}
-			
 		}
-		
 
 // Creating a String out of the determined traits to link the responses to a FinalPersonalityType	
 
