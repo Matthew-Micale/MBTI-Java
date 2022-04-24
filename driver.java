@@ -156,7 +156,7 @@ public class driver
 
 // For loop that makes Question objects from ArrayLists
 
-		int numOfQs = questions.size() - 5;
+		int numOfQs = questions.size() - 10;
 		System.out.println(tobj2.get(2));
 		Question[] allQs = new Question[numOfQs];
 		for (int i = 0; i < numOfQs; i++) {
@@ -191,7 +191,7 @@ public class driver
 
 		}
 		
-		int numOfCs = 30;
+		int numOfCs = 80;
 		Career[] allCs = new Career[numOfCs];
 		
 		ArrayList<FinalPersonalityType> ftp1a = new ArrayList<FinalPersonalityType>(0);
@@ -470,7 +470,6 @@ public class driver
 			if(screen.getNext() == true) {
 				res = screen.getSlider();
 				allRs[i] = new Response(allQs[i], res);
-				System.out.println("Answer: " + res);
 				Trait temp = allRs[i].getDelta();
 				int id = temp.getId();
 				int w1 = allQs[i].getQWeight();
