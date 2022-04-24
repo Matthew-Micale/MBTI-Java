@@ -27,14 +27,20 @@ public class GUI implements ChangeListener {
 		btnPre = new JButton("Previous Question");
 		btnstart = new JButton("Start Assessment");
 		lblQ = new JLabel("Do you consider yourself a Think or a Feeler");
-		lblIntro = new JLabel("<html>This program goal is to offer job recommendations to individuals based on their personality types, the<br/>"
-				+ "questions of consist the 4 personality spheres from used in the Myers–Briggs Type Indicator. After X<br/>"
-				+ "amount of questions a user will get a recommendation. The target audience is mainly individuals in a<br/>"
-				+ "stage of transitions within their lives (people looking for new jobs, people entering the job market,<br/>"
-				+ "people trying to find out what career they would want to study).<html>");
+		lblIntro = new JLabel("<html>This program goal is to offer job recommendations to individuals<br/>"
+				+ "based on their personality types, the questions of consist the 4<br/>"
+				+ "personality spheres from used in the Myers–Briggs Type Indicator.<br/>"
+				+ "After X amount of questions a user will get a recommendation. The <br/>"
+				+ "target audience is mainly individuals in a stage of transitions within<br/>"
+				+ "their lives (people looking for new jobs, people entering the job<br/>"
+				+ "market, people trying to find out what career they would want to study).<html>");
 		
-		lblDis = new JLabel("<html>This is just a a short disclaimer that this assesment is not ment to be used for recommendation, and that everything<br/>"
-				+ "displayed for the assesment is use for just a better sense of direction in what career you'd want to do.<html>");
+		lblDis = new JLabel(
+				"<html>This is just a a short disclaimer that this assesment<br/>"
+				+ "is not ment to be used for recommendation, and that<br/>"
+				+ "everything displayed for the assesment is use for just<br/>"
+				+ "a better sense of direction in what career you'd want<br/>"
+				+ "to do.<html>");
 		
 		career = "";
 		// sets the width and height of the window
@@ -44,14 +50,17 @@ public class GUI implements ChangeListener {
 	
 	//sets up the home page
 	public void setupInfo() {
+		
+		
 		lblIntro.setFont(new Font("Verdana", Font.PLAIN, 18));
-		lblDis.setFont(new Font("Verdana", Font.ITALIC, 12));
+		lblDis.setFont(new Font("Verdana", Font.PLAIN, 16));
 		btnstart.setFont(new Font("Verdana", Font.PLAIN, 15));
 		
 		inframe.setSize(new Dimension(width,height));
 		inframe.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		inframe.setTitle("MBTI+");
 		inframe.setVisible(true);
+		//inframe.setResizable(false);
 		
 		inframe.setLayout(new GridBagLayout());
 		gbc.gridx = 0;
@@ -60,8 +69,8 @@ public class GUI implements ChangeListener {
 		gbc.insets = new Insets(5,5,5,5);
 		inframe.add(lblIntro,gbc);
 		
-		gbc.gridx = 0;
-		gbc.gridy = 1;
+		gbc.gridx = 2;
+		gbc.gridy = 0;
 		gbc.gridwidth = 2;
 		gbc.insets = new Insets(5,5,5,5);
 		inframe.add(lblDis,gbc);
@@ -71,7 +80,7 @@ public class GUI implements ChangeListener {
 		gbc.gridy = 2;
 		gbc.gridwidth = 2;
 		gbc.fill = GridBagConstraints.HORIZONTAL;
-		gbc.insets = new Insets(5,5,5,5);
+		gbc.insets = new Insets(10,10,10,10);
 		inframe.add(btnstart,gbc);
 	}
 
@@ -80,6 +89,7 @@ public class GUI implements ChangeListener {
 		
 		
 		qframe.setLocation(inframe.getLocation());
+		qframe.setResizable(false);
 		
 		// sets the window size and declares how the window is going to flow
 		lblQ.setFont(new Font("Verdana", Font.PLAIN, 18));
@@ -90,7 +100,7 @@ public class GUI implements ChangeListener {
 		slider.setPaintLabels(true);
 		slider.addChangeListener(this);
 
-		qframe.setPreferredSize(new Dimension(width, height));
+		qframe.setPreferredSize(new Dimension(950, 480));
 		qframe.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		qframe.setTitle("MBTI+");
 
@@ -101,26 +111,26 @@ public class GUI implements ChangeListener {
 		gbc.gridx = 0;
 		gbc.gridy = 0;
 		gbc.gridwidth = 2;
-		gbc.insets = new Insets(5,5,5,5);
+		gbc.insets = new Insets(10,10,10,10);
 		qframe.add(lblQ,gbc);
 		
 		gbc.gridx = 0;
 		gbc.gridy = 1;
 		gbc.gridwidth = 2;
 		gbc.fill = GridBagConstraints.HORIZONTAL;
-		gbc.insets = new Insets(5,5,5,5);
+		gbc.insets = new Insets(10,10,10,10);
 		qframe.add(slider,gbc);
 		
 		gbc.gridx = 1;
 		gbc.gridy = 2;
 		gbc.gridwidth = 1;
-		gbc.insets = new Insets(5,5,5,5);
+		gbc.insets = new Insets(10,10,10,10);
 		qframe.add(btnNex,gbc);
 		
 		gbc.gridx = 0;
 		gbc.gridy = 2;
 		gbc.gridwidth = 1;
-		gbc.insets = new Insets(5,5,5,5);
+		gbc.insets = new Insets(10,10,10,10);
 		qframe.add(btnPre,gbc);
 		
 		qframe.pack();
