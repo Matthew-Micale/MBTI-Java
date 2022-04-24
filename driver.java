@@ -541,6 +541,8 @@ public class driver
 			s5 = LS;
 			calculate1 += "L";
 		}
+		
+		System.out.println(calculate1);
 
 // Switch statement that takes the previous String and links it to a FinalPersonalityType	
 
