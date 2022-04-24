@@ -470,6 +470,7 @@ public class driver
 			if(screen.getNext() == true) {
 				res = screen.getSlider();
 				allRs[i] = new Response(allQs[i], res);
+				System.out.println("Answer: " + res);
 				Trait temp = allRs[i].getDelta();
 				int id = temp.getId();
 				int w1 = allQs[i].getQWeight();
