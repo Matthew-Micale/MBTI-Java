@@ -9,7 +9,7 @@ public class GUI implements ChangeListener {
 	private int width, height;
 	private String career;
 	private JFrame qframe, inframe;
-	private JLabel lblQ, lblIntro,lblDis;
+	private JLabel lblQ, lblIntro,lblDis, lblu;
 	private JButton btnNex, btnPre,btnstart;
 	private JSlider slider;
 	private GridBagConstraints gbc = new GridBagConstraints();
@@ -25,6 +25,8 @@ public class GUI implements ChangeListener {
 		slider = new JSlider(JSlider.HORIZONTAL, 1, 5, 1);
 		btnNex = new JButton("Next Question");
 		btnPre = new JButton("Previous Question");
+		
+		lblu = new JLabel("1 is your strong disagree  0 is neutral  5 is you strongly agree");
 		btnstart = new JButton("Start Assessment");
 		lblQ = new JLabel("Do you consider yourself a Think or a Feeler");
 		lblIntro = new JLabel("<html>This program goal is to offer job recommendations to individuals<br/>"
@@ -33,11 +35,12 @@ public class GUI implements ChangeListener {
 				+ "After X amount of questions a user will get a recommendation. The <br/>"
 				+ "target audience is mainly individuals in a stage of transitions within<br/>"
 				+ "their lives (people looking for new jobs, people entering the job<br/>"
-				+ "market, people trying to find out what career they would want to study).<html>");
+				+ "market, people trying to find out what career they would want<br/>"
+				+ "to study).<html>");
 		
 		lblDis = new JLabel(
-				"<html>This is just a a short disclaimer that this assesment<br/>"
-				+ "is not ment to be used for recommendation, and that<br/>"
+				"<html>This is just a short disclaimer that this assesment<br/>"
+				+ "is ment to be used for recommendation, and that<br/>"
 				+ "everything displayed for the assesment is use for just<br/>"
 				+ "a better sense of direction in what career you'd want<br/>"
 				+ "to do.<html>");
@@ -52,9 +55,9 @@ public class GUI implements ChangeListener {
 	public void setupInfo() {
 		
 		
-		lblIntro.setFont(new Font("Verdana", Font.PLAIN, 18));
+		lblIntro.setFont(new Font("Verdana", Font.PLAIN, 16));
 		lblDis.setFont(new Font("Verdana", Font.PLAIN, 16));
-		btnstart.setFont(new Font("Verdana", Font.PLAIN, 15));
+		btnstart.setFont(new Font("Verdana", Font.PLAIN, 12));
 		
 		inframe.setSize(new Dimension(width,height));
 		inframe.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -75,14 +78,14 @@ public class GUI implements ChangeListener {
 		gbc.insets = new Insets(5,5,5,5);
 		inframe.add(lblDis,gbc);
 		
-		
-		gbc.gridx = 0;
+		gbc.gridx = 1;
 		gbc.gridy = 2;
-		gbc.gridwidth = 2;
+		gbc.gridwidth = 3;
 		gbc.fill = GridBagConstraints.HORIZONTAL;
 		gbc.insets = new Insets(10,10,10,10);
 		inframe.add(btnstart,gbc);
 	}
+	
 
 	// sets all the GUI sizes and variables
 	public void setupGUI() {
@@ -93,7 +96,8 @@ public class GUI implements ChangeListener {
 		
 		// sets the window size and declares how the window is going to flow
 		lblQ.setFont(new Font("Verdana", Font.PLAIN, 18));
-		slider.setFont(new Font("Verdana", Font.PLAIN, 15));
+		lblu.setFont(new Font("Verdana", Font.ITALIC, 16));
+		slider.setFont(new Font("Verdana", Font.PLAIN, 14));
 		slider.setMajorTickSpacing(1);
 		slider.setPaintTrack(true);
 		slider.setPaintTicks(true);
@@ -121,14 +125,20 @@ public class GUI implements ChangeListener {
 		gbc.insets = new Insets(10,10,10,10);
 		qframe.add(slider,gbc);
 		
-		gbc.gridx = 1;
+		gbc.gridx = 0;
 		gbc.gridy = 2;
+		gbc.gridwidth = 1;
+		gbc.insets = new Insets(10,10,10,10);
+		qframe.add(lblu,gbc);
+		
+		gbc.gridx = 1;
+		gbc.gridy = 3;
 		gbc.gridwidth = 1;
 		gbc.insets = new Insets(10,10,10,10);
 		qframe.add(btnNex,gbc);
 		
 		gbc.gridx = 0;
-		gbc.gridy = 2;
+		gbc.gridy = 3;
 		gbc.gridwidth = 1;
 		gbc.insets = new Insets(10,10,10,10);
 		qframe.add(btnPre,gbc);
@@ -163,7 +173,7 @@ public class GUI implements ChangeListener {
 				setupGUI();
 			}
 		};
-
+		
 		btnstart.addActionListener(ActStart);
 		btnNex.addActionListener(ActNex);
 		btnPre.addActionListener(ActPre);
