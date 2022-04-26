@@ -191,7 +191,7 @@ public class driver
 
 		}
 		
-		int numOfCs = 90;
+		int numOfCs = 100;
 		Career[] allCs = new Career[numOfCs];
 		
 		ArrayList<FinalPersonalityType> ftp1a = new ArrayList<FinalPersonalityType>(0);
