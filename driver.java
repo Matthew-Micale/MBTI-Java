@@ -415,40 +415,6 @@ public class driver
 	{
 		allCs[i] = new Career(careerName.get(i),ftp1a.get(i),ftp2a.get(i));
 	}
-
-		
-	/*
-		allCs[0] = new Career("Engineer", INTJH, INTJL);
-		allCs[1] = new Career("Dentist", ISTJL, INTJL);
-		allCs[2] = new Career("Counsler", INFJL, INFJH);
-		allCs[3] = new Career("HR Director", ENFJL, ENFPL);
-		allCs[4] = new Career("Construction Worker", ISTPL, ISTPH);
-		allCs[5] = new Career("Psychologist", ESFJL, ESFJH);
-		allCs[6] = new Career("Artist", INFPH, ISFPH);
-		allCs[7] = new Career("Event Planner", ESFPL, ESFPH);
-		allCs[8] = new Career("Reporter", ENFPL, ESFPL);
-		allCs[9] = new Career("Firefighter", ESTPL, ESTJL);
-		allCs[10] = new Career("Accountant", ISTJH, ISTJL);
-		allCs[11] = new Career("Photographer", ISFJH, ISFJL);
-		allCs[12] = new Career("Financial Planner", ENTPL, INTPL);
-		allCs[13] = new Career("Veterinarian", ISFPL, ESFPL);
-		allCs[14] = new Career("Marketer", ESTPL, ESTPH);
-		allCs[15] = new Career("Teacher", ENFPL, ENFPH);
-		allCs[16] = new Career("Police Officer", ESTJL, ISTJL);
-		allCs[17] = new Career("Social Worker", ISFPL, ESFPL);
-		allCs[18] = new Career("Lawyer", INTPL, INTJL);
-		allCs[19] = new Career("Writer", INTPL, INTPH);
-		allCs[20] = new Career("Musician",ENFPH,ENFPL);
-		allCs[21] = new Career("Tour Guide",ENFPH,ENFPL);
-		allCs[22] = new Career("Dental Hygenist",ISFPH,ISFPL);
-		allCs[23] = new Career("Pharmacist",ISTPL,ISTJL);
-		allCs[24] = new Career("Teacher",ENFJL,ENFJH);
-		allCs[25] = new Career("Pilot",ENTJL,INTJL);
-		allCs[26] = new Career("Secretary",ESFJL,ESFJH);
-		allCs[27] = new Career("EMT",ISTPL,ESTPL);
-		allCs[28] = new Career("Clergy",INFJL,INFJH);
-		allCs[29] = new Career("Civil Engineer",ESTPL,ISTPL);
-		*/
 		
 
 // PersonalityType object calculate is used to keep a running score of each Trait
@@ -459,6 +425,7 @@ public class driver
 		 screen.setupButtonListeners();
 
 // Loop that asks the user questions and saves their responses	
+		
 		int temp1 = numOfQs;
 		int res = 0;
 		screen.setNext(false);
