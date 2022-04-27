@@ -26,7 +26,7 @@ public class GUI implements ChangeListener {
 		btnNex = new JButton("Next Question");
 		btnPre = new JButton("Previous Question");
 		
-		lblu = new JLabel("1 is your strong disagree  0 is neutral  5 is you strongly agree");
+		lblu = new JLabel("1 is your strongly disagree - 3 is neutral - 5 is you strongly agree");
 		btnstart = new JButton("Start Assessment");
 		lblQ = new JLabel("Do you consider yourself a Think or a Feeler");
 		lblIntro = new JLabel("<html>This program goal is to offer job recommendations to individuals<br/>"
