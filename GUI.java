@@ -29,14 +29,16 @@ public class GUI implements ChangeListener {
 		lblu = new JLabel("1 is your strongly disagree - 3 is neutral - 5 is you strongly agree");
 		btnstart = new JButton("Start Assessment");
 		lblQ = new JLabel("Do you consider yourself a Think or a Feeler");
-		lblIntro = new JLabel("<html>This program goal is to offer job recommendations to individuals<br/>"
+		lblIntro = new JLabel(
+				"<html>This program goal is to offer job recommendations to individuals<br/>"
 				+ "based on their personality types, the questions consist of the four<br/>"
-				+ "personality spheres from the Myers–Briggs type indicator and also highly-stressed vs. lowly-stressed.<br/>"
-				+ "After answering 50 questions the user will get recommendations. The <br/>"
-				+ "target audience is mainly individuals in a stage of transitions within<br/>"
-				+ "their lives (people looking for new jobs, people entering the job<br/>"
-				+ "market, people trying to find out what career they would want<br/>"
-				+ "to follow).<html>");
+				+ "personality spheres from the Myers–Briggs type indicator and also <br/>"
+				+ "highly-stressed vs. lowly-stressed. After answering 50 questions<br/>"
+				+ "the user will get recommendations. The target audience is mainly<br/>"
+				+ "individuals in a stage of transitions within in a stage of transitions<br/>"
+				+ "within their lives (people looking for new jobs, people entering the <br/>"
+				+ "job market, people trying to find out what career they would want to <br/> "
+				+ "follow).<html>");
 		
 		lblDis = new JLabel(
 				"<html>This is just a short disclaimer that this assesment<br/>"
