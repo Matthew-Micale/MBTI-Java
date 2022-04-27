@@ -30,20 +30,20 @@ public class GUI implements ChangeListener {
 		btnstart = new JButton("Start Assessment");
 		lblQ = new JLabel("Do you consider yourself a Think or a Feeler");
 		lblIntro = new JLabel("<html>This program goal is to offer job recommendations to individuals<br/>"
-				+ "based on their personality types, the questions of consist the 4<br/>"
-				+ "personality spheres from used in the Myers–Briggs Type Indicator.<br/>"
-				+ "After X amount of questions a user will get a recommendation. The <br/>"
+				+ "based on their personality types, the questions consist of the four<br/>"
+				+ "personality spheres from the Myersâ€“Briggs type indicator and also highly-stressed vs. lowly-stressed.<br/>"
+				+ "After answering 50 questions the user will get recommendations. The <br/>"
 				+ "target audience is mainly individuals in a stage of transitions within<br/>"
 				+ "their lives (people looking for new jobs, people entering the job<br/>"
 				+ "market, people trying to find out what career they would want<br/>"
-				+ "to study).<html>");
+				+ "to follow).<html>");
 		
 		lblDis = new JLabel(
 				"<html>This is just a short disclaimer that this assesment<br/>"
-				+ "is ment to be used for recommendation, and that<br/>"
-				+ "everything displayed for the assesment is use for just<br/>"
-				+ "a better sense of direction in what career you'd want<br/>"
-				+ "to do.<html>");
+				+ "is meant to be used as an auxilary tool and that<br/>"
+				+ "everything displayed for the assesment is used for<br/>"
+				+ "a better sense of direction in which career path you'd want<br/>"
+				+ "to follow.<html>");
 		
 		career = "";
 		// sets the width and height of the window
