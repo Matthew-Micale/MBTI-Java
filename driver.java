@@ -624,7 +624,7 @@ public class driver
 		for (int i = 0; i < numOfCs; i++) {
 			
 			if (allCs[i].checkMatch(calculateFinal)) {
-				System.out.println(allCs[i].getJobTitle());
+				//System.out.println(allCs[i].getJobTitle());
 				screen.setC(allCs[i].getJobTitle());
 				screen.setLbl();
 			}
